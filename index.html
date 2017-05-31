@@ -4,10 +4,84 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
 
+	
+		<div class="navbar">
+		
+			 <a href="#">View Music</a>
+			 <a href="#">Add Music</a>
+			 <a href="#">Profile</a>
+		
+		</div>
+	
+	
+	<div id="wrapper">
+	
+	<div id="sidebar">
+		<form>
+		Song length:<br>
+		<input type="range" min="0 seconds" max="600 seconds"/><br>
+		
+	 	Artist:<br>
+		<select name="artist">
+		  <option>Options</option>
+		  <option value="radiohead">Radiohead</option>
+		  <option value="drytheriver">Dry the River</option>
+		  <option value="alt-j">Alt-J</option>
+		  <option value="boniver">Bon Iver</option>
+		</select><br><br>
+		
+
+		Album:<br>
+		<select name="album">
+		  <option>Options</option>
+		  <option value="thebends">The Bends</option>
+		  <option value="shallowbed">Shallow Bed</option>
+		  <option value="anawesomewave">An Awesome Wave</option>
+		  <option value="boniver">Bon Iver</option>
+		</select><br><br>
+
+
+		Genre: <br>
+			<div id="box">
+			<ul class="checkbox">
+			<section>
+			  <li><input type="checkbox" class="genre" value="rock"> Rock</li>
+			  <li><input type="checkbox" class="genre" value="pop"> Pop</li>
+			  <li><input type="checkbox" class="genre" value="blues"> Blues</li>
+			</section>
+			<section>
+			  <li><input type="checkbox" class="genre" value="Classical"> Classical</li>
+			  <li><input type="checkbox" class="genre" value="Jazz"> Jazz</li>
+			  <li><input type="checkbox" class="genre" value="hiphop"> Hip Hop</li><br>
+			 </section>
+			</ul>
+			
+			</div>
+		<button id="button">Filter</button>
+		
+		</form>
+		</div>
+
+		<div id="main">
+		<h1>Song Name</h1>
+		<p> Artist | Album | Genre </p><br>
+		<h1>Song Name</h1>
+		<p> Artist | Album | Genre </p><br>
+		<h1>Song Name</h1>
+		<p> Artist | Album | Genre </p><br>
+	</div>
+		
+</div>
+
+
+
+</div>
 
 </body>
-</html>
+
+
+
