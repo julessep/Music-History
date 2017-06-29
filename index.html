@@ -7,17 +7,12 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-	
 		<div class="navbar">
-		
-			 <a href="#">View Music</a>
-			 <a href="#">Add Music</a>
-			 <a href="#">Profile</a>
-		
+			 <a href="#" id="link-home">List Music</a>
+			 <a href="#" id="link-add">Add Music</a>
+			 <!-- <a href="#" id="link-list">View Music</a> -->
 		</div>
-	
-	
+
 	<div id="wrapper">
 	
 	<div id="sidebar">
@@ -28,22 +23,22 @@
 	 	Artist:<br>
 		<select name="artist">
 		  <option>Options</option>
-		  <option value="radiohead">Radiohead</option>
-		  <option value="drytheriver">Dry the River</option>
-		  <option value="alt-j">Alt-J</option>
-		  <option value="boniver">Bon Iver</option>
+		  <option value="ZZ Top">ZZ Top</option>
+		  <option value="Supertramp">Supertramp</option>
+		  <option value="PinkFloyd">Pink Floyd</option>
+		  <option value="Guns&Roses">Guns & Roses</option>
+		  <option value="Morisette">Morisette</option>
 		</select><br><br>
 		
-
 		Album:<br>
 		<select name="album">
 		  <option>Options</option>
-		  <option value="thebends">The Bends</option>
-		  <option value="shallowbed">Shallow Bed</option>
-		  <option value="anawesomewave">An Awesome Wave</option>
-		  <option value="boniver">Bon Iver</option>
+		  <option value="Eliminator">Eliminator</option>
+		  <option value="BreakfastinAmerica">Breakfast in America</option>
+		  <option value="TheWall">The Wall</option>
+		  <option value="AppetiteforDestruction">Appetite for Destruction</option>
+		  <option value="JaggedLittlePill">Jagged Little Pill</option>
 		</select><br><br>
-
 
 		Genre: <br>
 			<div id="box">
@@ -61,20 +56,33 @@
 			</ul>
 			
 			</div>
-		<button id="button">Filter</button>
+		<button class="button">Filter</button>
 		
 		</form>
 		</div>
 
 		<div id="main">
-	</div>
-		
+
 </div>
+</div>
+<section class="hidden" id="add-view">
+	
+		Song Name:<input id="songInput" type="text" name="name"><br>
+		Artist:<input id="artistInput" type="text" name="artist"><br>
+		Album:<input id="albumInput" type="text" name="album"><br>
+		<button class="button">Add</button>
+		<p id="output-songs"></p>
+	
+</section>
+
+<section class="hidden" id="list-view">
+	Add List
+</section>
+
 
 	
-
-</div>
-
+<script src="home.js"></script>
+<script src="addMusic.js"></script>
 <script src="songs.js"></script>
 </body>
 
