@@ -58,7 +58,7 @@
 	list-style-type: none;
 }
 
-#button {
+.button {
 
 	border: 2px solid black;
 	background-color: lightgrey;
@@ -84,7 +84,22 @@
 	color: #785616;
 }
 
+.visible {
+  display: block;
+}
 
+.hidden {
+  display: none;
+}
+
+#add-view {
+	text-align: center;
+	padding: 20px;
+}
+
+input {
+	border: 1px solid black;
+}
 
 
 

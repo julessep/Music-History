@@ -17,12 +17,6 @@ request.addEventListener("error", executeIfXHRFails);
 request.open("GET", "songs.json");
 request.send();
 
-// var songList = document.getElementById("main") 
-// 	for (var i = 0; i < songs.length; i++) {
-// 		songList.innerHTML += "<h1>" + songs[i].title + "</h1>"+
-// 		"<p>" + songs[i].artist + " | " + songs[i].album + " | " + songs[i].genre + "</p>"
-// }
-
 function outputSongs (songsArr){
 	let songList = document.getElementById("main");
     songsArr.forEach(function(song){

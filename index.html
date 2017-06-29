@@ -8,9 +8,9 @@
 </head>
 <body>
 		<div class="navbar">
-			 <a href="#">View Music</a>
-			 <a href="#">Add Music</a>
-			 <a href="#">List Music</a>
+			 <a href="#" id="link-home">List Music</a>
+			 <a href="#" id="link-add">Add Music</a>
+			 <!-- <a href="#" id="link-list">View Music</a> -->
 		</div>
 
 	<div id="wrapper">
@@ -56,20 +56,33 @@
 			</ul>
 			
 			</div>
-		<button id="button">Filter</button>
+		<button class="button">Filter</button>
 		
 		</form>
 		</div>
 
 		<div id="main">
-	</div>
-		
+
 </div>
+</div>
+<section class="hidden" id="add-view">
+	
+		Song Name:<input id="songInput" type="text" name="name"><br>
+		Artist:<input id="artistInput" type="text" name="artist"><br>
+		Album:<input id="albumInput" type="text" name="album"><br>
+		<button class="button">Add</button>
+		<p id="output-songs"></p>
+	
+</section>
+
+<section class="hidden" id="list-view">
+	Add List
+</section>
+
 
 	
-
-</div>
-
+<script src="home.js"></script>
+<script src="addMusic.js"></script>
 <script src="songs.js"></script>
 </body>
 
